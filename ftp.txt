@@ -1,5 +1,5 @@
 open 192.168.10.104
-user backups
-<'rfgs!
+user backup
+<'password!
 send *.zip
 bye
