@@ -12,7 +12,7 @@ SELECT @fileDate = CONVERT(VARCHAR(8),GETDATE(),112)
 DECLARE db_cursor CURSOR FOR  
 SELECT name 
 FROM master.dbo.sysdatabases                                    
-WHERE name NOT IN ('master','model','msdb','tempdb','renins20160408','renins20160407','rusal20160113','rusal20160324') 
+WHERE name NOT IN ('master','model','msdb','tempdb') 
 
 OPEN db_cursor   
 FETCH NEXT FROM db_cursor INTO @name   
